@@ -1,8 +1,7 @@
 import { FC, useState } from "react";
 import { useDispatch } from "react-redux";
 import { updateTodo } from "../Redux/Slices/todosSlice";
-import DatePicker from "../DatePicker"; // You'll need to create a DatePicker component
-import TimeRangePicker from "../TimeRangePicker"; // You'll need to create a TimeRangePicker
+import TimeRangePicker from "../TimeRangePicker"; 
 import Button from "../Button";
 import { Todo } from "../Redux/Slices/todosSlice";
 
@@ -19,15 +18,7 @@ const EditTodoModal: FC<Props> = ({ handleCloseAllModal, todo }) => {
     timeEnd: todo?.timeEnd || "",
   });
 
-  const dispatch = useDispatch();
-
-  /* const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormValues({
-      ...formValues,
-      [name]: value,
-    });
-  }; */
+  const dispatch = useDispatch()
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
