@@ -11,7 +11,7 @@ const MobileNavbar: React.FC = () => {
   };
 
   return (
-    <nav className="my-4">
+    <nav className="py-4 px-2">
       <div className="flex justify-between items-center transition-all">
         <h1 className="text-black text-2xl font-bold">ToDo</h1>
         <ul className="hidden md:flex items-center gap-4">

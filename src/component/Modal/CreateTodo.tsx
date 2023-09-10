@@ -41,7 +41,7 @@ const CreateTodo: FC<Props> = ({ handleCloseAllModal }) => {
 
   return (
     <div className="w-full md:h-auto md:w-2/6 h-full absolute top-0 z-50 pt-72 md:p-0  md:static bg-black bg-opacity-60 md:bg-white md:bg-opacity-100">
-      <div className="h-full md:h-auto bg-white rounded-t-3xl rounded-b-none md:rounded-3xl shadow-lg p-6">
+      <div className="h-screen md:h-auto bg-white rounded-t-3xl rounded-b-none md:rounded-3xl shadow-lg p-6">
         <div className="flex items-center justify-between mb-6">
           <h1 className="text-gray-900 text-lg font-semibold">Add Task</h1>
           <Button
