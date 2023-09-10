@@ -182,12 +182,14 @@ const todosSlice = createSlice({
   name: "todos",
   initialState,
   reducers: {
+    //creates new todo and push it to the todo array 
     addTodo: (state, action: PayloadAction<Todo>) => {
       state.todos.push(action.payload);
     },
     setSelectedTodo: (state, action: PayloadAction<Todo | null>) => {
       state.selectedTodo = action.payload;
     },
+    // updates a todo from the state based on its ID
     updateTodo: (state, action: PayloadAction<Todo>) => {
       const updatedTodo = action.payload;
       const index = state.todos.findIndex((todo) => todo.id === updatedTodo.id);
