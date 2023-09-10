@@ -30,7 +30,7 @@ const DatePicker: React.FC<DatePickerProps> = ({ selectedDate, onChange }) => {
     return "Another day";
   };
   const handleDateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    // Extract the selected date from the event
+  
     const newDate = event.target.value || null;
     onChange(newDate);
   };
